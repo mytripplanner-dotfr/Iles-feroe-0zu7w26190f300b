@@ -1,0 +1,216 @@
+{
+  "pays": "Îles Féroé",
+  "drapeau": "🇫🇴",
+  "symbole": "🐑",
+  "titre": "Évasion Nordique aux Îles Féroé : Entre Nature et Sérénité",
+  "budget_total": "Environ 1200-1300 €/personne",
+  "duree": "4 jours",
+  "temps_vol": "4h30 (avec escale depuis Paris, france)",
+  "escale": "1",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée et Charme de Tórshavn",
+      "legende": "Débarquez sur ces îles mystiques, installez-vous dans la capitale colorée et laissez-vous imprégner par l'atmosphère paisible de Tórshavn, entre maisons traditionnelles et port animé. Une première journée douce pour s'acclimater et ressentir la quiétude nordique.",
+      "lieu": "Tórshavn",
+      "activites": [
+        "<strong>🛬 Arrivée à l'aéroport de Vágar (FAE)</strong>: Transfert vers Tórshavn, la capitale des Îles Féroé, en traversant des paysages déjà époustouflants et verdoyants.",
+        "<strong>🛏️ Installation à l'hôtel</strong>: Prenez vos quartiers dans un hébergement confortable au cœur de Tórshavn, idéal pour se reposer après le voyage.",
+        "<strong>🚶‍♂️ Balade relaxante dans le quartier historique de Tinganes</strong>: Flânez parmi les maisons en bois aux toits d'herbe de ce quartier historique, siège du gouvernement féroïen, et admirez le port.",
+        "<strong>☕ Pause café et pâtisserie locale</strong>: Savourez un moment de détente dans un café cosy, goûtant aux douceurs féroïennes comme le \"drýlur\" (pain sucré)."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Aéroport de Vágar, Sørvágur",
+          "categorie": "Aéroport",
+          "coords": { "lat": 62.0636, "lng": -7.2772 }
+        },
+        {
+          "nom_recherche": "Tinganes, Tórshavn",
+          "categorie": "Quartier historique",
+          "coords": { "lat": 62.0094, "lng": -6.7725 }
+        }
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Location de voiture",
+          "texte": "Il est fortement recommandé de louer une voiture dès l'arrivée à l'aéroport pour explorer les îles en toute liberté. Réservez à l'avance pour garantir la disponibilité !"
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏞️",
+      "titre": "Lacs Sereins et Villages Pittoresques",
+      "legende": "Explorez des paysages emblématiques avec des balades accessibles, découvrez des villages pittoresques et admirez la beauté brute des falaises, le tout dans une ambiance apaisante et ressourçante. Une journée dédiée à la découverte de la nature féroïenne.",
+      "lieu": "Vágar & Streymoy",
+      "activites": [
+        "<strong>🚶‍♀️ Randonnée facile autour du lac Sørvágsvatn (Leitisvatn)</strong>: Profitez d'une marche douce jusqu'à la \"chute d'eau sur l'océan\", un spectacle naturel unique et apaisant, sans difficulté majeure.",
+        "<strong>🏘️ Visite du village de Gásadalur et sa cascade Múlafossur</strong>: Découvrez ce village isolé et sa célèbre cascade tombant directement dans l'Atlantique, un lieu d'une beauté irréelle et photogénique.",
+        "<strong>🚗 Route panoramique vers Saksun</strong>: Empruntez des routes sinueuses offrant des vues imprenables sur les fjords et les montagnes, une expérience visuelle à part entière.",
+        "<strong>⛪ Exploration de la ferme-église de Saksun</strong>: Visitez ce hameau idyllique niché au fond d'une vallée, avec ses maisons aux toits d'herbe et son église pittoresque, invitant à la contemplation."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Lac Sørvágsvatn, Vágar",
+          "categorie": "Lac",
+          "coords": { "lat": 62.0461, "lng": -7.2167 }
+        },
+        {
+          "nom_recherche": "Gásadalur, Vágar",
+          "categorie": "Village",
+          "coords": { "lat": 62.1000, "lng": -7.4333 }
+        },
+        {
+          "nom_recherche": "Múlafossur Waterfall, Gásadalur",
+          "categorie": "Cascade",
+          "coords": { "lat": 62.1000, "lng": -7.4333 }
+        },
+        {
+          "nom_recherche": "Saksun, Streymoy",
+          "categorie": "Village",
+          "coords": { "lat": 62.2472, "lng": -7.1833 }
+        },
+        {
+          "nom_recherche": "Saksun Church, Saksun",
+          "categorie": "Église",
+          "coords": { "lat": 62.2472, "lng": -7.1833 }
+        }
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🥾",
+          "titre": "Équipement",
+          "texte": "Prévoyez des chaussures de marche imperméables et confortables, ainsi que des vêtements en couches, car la météo peut changer rapidement et le terrain être humide."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🌊",
+      "titre": "Croisière Relaxante et Vues Imprenables",
+      "legende": "Laissez-vous bercer par les flots lors d'une croisière apaisante le long des falaises majestueuses, puis profitez d'une vue panoramique sur l'océan et les îles environnantes, loin de l'agitation du monde. Une immersion totale dans la grandeur marine des Féroé.",
+      "lieu": "Vestmanna & Eysturoy",
+      "activites": [
+        "<strong>🚢 Croisière relaxante aux falaises de Vestmanna (Bird Cliffs)</strong>: Embarquez pour une croisière paisible à travers des grottes marines et le long de falaises vertigineuses, abritant des milliers d'oiseaux marins, un spectacle naturel impressionnant.",
+        "<strong>☕ Déjeuner paisible à Vestmanna</strong>: Savourez un repas réconfortant dans ce charmant village portuaire après votre excursion en mer, en profitant de l'ambiance locale.",
+        "<strong>🌉 Visite de la \"Pont sur l'Atlantique\" (Brúgvin um Streymin)</strong>: Traversez ce pont unique reliant les îles de Streymoy et Eysturoy, offrant une vue imprenable sur le fjord et les paysages environnants.",
+        "<strong>🚶‍♂️ Balade douce à Gjógv et son port naturel</strong>: Explorez ce village pittoresque, célèbre pour son port naturel en forme de gorge, et profitez d'une promenade tranquille le long de la côte, idéal pour la sérénité."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Vestmanna Bird Cliffs, Vestmanna",
+          "categorie": "Falaises",
+          "coords": { "lat": 62.1500, "lng": -7.1667 }
+        },
+        {
+          "nom_recherche": "Brúgvin um Streymin, Streymoy",
+          "categorie": "Pont",
+          "coords": { "lat": 62.1300, "lng": -7.0000 }
+        },
+        {
+          "nom_recherche": "Gjógv, Eysturoy",
+          "categorie": "Village",
+          "coords": { "lat": 62.3233, "lng": -6.9361 }
+        }
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🧥",
+          "titre": "Conseil Croisière",
+          "texte": "Même en été, il peut faire frais et venteux en mer. Prévoyez des vêtements très chauds et imperméables pour la croisière aux falaises de Vestmanna, ainsi qu'un bonnet."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🛫",
+      "titre": "Adieux aux Îles et Retour",
+      "legende": "Profitez d'une dernière matinée pour explorer Tórshavn à votre rythme, faire quelques emplettes locales ou simplement savourer l'ambiance avant de prendre votre vol retour, la tête pleine de souvenirs nordiques et apaisants. Une conclusion douce à votre aventure féroïenne.",
+      "lieu": "Tórshavn & Vágar",
+      "activites": [
+        "<strong>🛍️ Shopping de souvenirs à Tórshavn</strong>: Trouvez des pulls en laine féroïenne, des céramiques ou des œuvres d'art locales pour ramener un morceau des îles chez vous, un souvenir authentique.",
+        "<strong>🏛️ Visite du Musée National des Féroé (Føroya Fornminnissavn)</strong>: Plongez dans l'histoire et la culture des îles, une activité calme et enrichissante pour mieux comprendre ces terres.",
+        "<strong>🍽️ Dernier déjeuner féroïen</strong>: Savourez un dernier repas typique avant de quitter ces terres uniques, peut-être un plat de poisson frais.",
+        "<strong>🛫 Transfert à l'aéroport de Vágar (FAE) et vol retour</strong>: Empruntez la route panoramique vers l'aéroport pour votre vol de retour vers Paris, france, avec des images inoubliables en tête."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Føroya Fornminnissavn, Tórshavn",
+          "categorie": "Musée",
+          "coords": { "lat": 62.0125, "lng": -6.7800 }
+        },
+        {
+          "nom_recherche": "Tórshavn, Streymoy",
+          "categorie": "Ville",
+          "coords": { "lat": 62.0100, "lng": -6.7700 }
+        }
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Heure de départ",
+          "texte": "Prévoyez suffisamment de temps pour le trajet vers l'aéroport de Vágar (environ 45 minutes depuis Tórshavn) et les formalités d'embarquement, surtout en haute saison."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    { "titre": "Budget vol:", "legende": "A partir de 355 €/pers", "symbole": "🛬" },
+    { "titre": "Budget transports:", "legende": "Environ 120 €/pers (location voiture, essence, tunnels sous-marins)", "symbole": "🚗" },
+    { "titre": "Budget repas:", "legende": "Environ 240 €/pers (3 repas/jour, budget moyen pour 4 jours)", "symbole": "🥗" },
+    { "titre": "Budget logement:", "legende": "Environ 360 €/pers (3 nuits, hôtel 3* ou guesthouse de qualité)", "symbole": "🛏️" },
+    { "titre": "Budget activités:", "legende": "Environ 120 €/pers (croisière Vestmanna, musées, etc.)", "symbole": "🎭" }
+  ],
+  "periodes_ideales": [
+    { "titre": "Juin à Août", "symbole": "☀️" },
+    { "titre": "Mai ou Septembre", "symbole": "🍂" }
+  ],
+  "infos_pratiques": [
+    { "titre": "La météo aux Îles Féroé est très changeante et imprévisible. Prévoyez des vêtements en couches, un bon coupe-vent et un imperméable, quelle que soit la saison, pour faire face à toutes les conditions.", "symbole": "🌦️" },
+    { "titre": "La monnaie est la Couronne Danoise (DKK). Les cartes de crédit sont largement acceptées partout, mais avoir un peu de liquide peut être utile pour les petits commerces ou les villages isolés.", "symbole": "💳" },
+    { "titre": "Le permis de conduire français est suffisant pour louer une voiture. La conduite se fait à droite. Attention aux nombreux tunnels sous-marins qui sont payants (environ 100 DKK/trajet, souvent facturés à la location).", "symbole": "🚗" },
+    { "titre": "La couverture mobile est généralement bonne sur les îles principales. Le Wi-Fi est disponible dans la plupart des hébergements, cafés et restaurants, vous permettant de rester connecté.", "symbole": "📶" }
+  ],
+  "infos_decallees": [
+    {
+      "symbole": "🐑",
+      "titre": "Plus de moutons que d'habitants !",
+      "texte": "Les Îles Féroé comptent environ 80 000 moutons pour seulement 54 000 habitants. C'est pourquoi leur nom signifie littéralement \"Îles aux Moutons\" en vieux norrois, une réalité visible partout !"
+    },
+    {
+      "symbole": "⚽",
+      "titre": "Le football, une passion nationale",
+      "texte": "Malgré leur petite taille et leur population modeste, les Féroé ont leur propre équipe nationale de football qui a réussi l'exploit de battre des nations bien plus grandes, comme la Grèce ou l'Autriche, créant la surprise sur la scène internationale et un immense sentiment de fierté."
+    }
+  ],
+  "specialites_culinaires": [
+    {
+      "symbole": "🍴",
+      "titre": "Skerpikjøt",
+      "description": "De l'agneau séché à l'air libre pendant plusieurs mois, offrant une saveur intense et unique, très appréciée des locaux. Souvent servi en fines tranches avec du pain de seigle, c'est une expérience gustative audacieuse."
+    },
+    {
+      "symbole": "🍲",
+      "titre": "Ræst Kjøt",
+      "description": "Viande d'agneau fermentée, une spécialité traditionnelle au goût très prononcé et acquis, souvent préparée en ragoût ou servie avec des pommes de terre. C'est un plat emblématique de la cuisine féroïenne."
+    },
+    {
+      "symbole": "🐟",
+      "titre": "Fiskakøka",
+      "description": "Des boulettes de poisson (souvent de la morue ou de l'églefin) mélangées à des pommes de terre et des oignons, puis frites. Un plat réconfortant et savoureux, parfait pour les journées fraîches."
+    }
+  ],
+  "liens_utiles": [
+    { "legende": "Vols", "titre": "Réserve ton vol", "url": "https://www.kayak.fr/flights/CDG-FAE/2026-05-15/2026-05-19", "symbole": "🛬" },
+    { "legende": "Infos officielles et inspirations", "titre": "Visit Faroe Islands", "url": "https://visitfaroeislands.com/", "symbole": "📘" },
+    { "legende": "Location de voiture", "titre": "62°N Car Rental", "url": "https://www.62n.fo/car-rental/", "symbole": "🚗" },
+    { "legende": "Météo locale", "titre": "Meteo.fo", "url": "https://www.meteo.fo/", "symbole": "🌤️" }
+  ]
+}
