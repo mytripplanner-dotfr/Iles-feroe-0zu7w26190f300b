@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion Nordique aux Îles Féroé : Entre Nature et Sérénité </title>
+    <link rel="icon" type="image/png" href="https://api.mytripplanner.fr/api/files/pbc_1321337024/47976eld0rscwbc/favicon_ytvg76obie.svg?thumb=100x100&token="/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée et Charme de Tórshavn</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Lacs Sereins et Villages Pittoresques</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Croisière Relaxante et Vues Imprenables</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Adieux aux Îles et Retour</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Iles-feroe-0zu7w26190f300b/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">ILES FEROE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Évasion Nordique aux Îles Féroé : Entre Nature et Sérénité</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ 4 jours</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 Environ 1200-1300 €/personne</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 4h30 (avec escale depuis Paris, france)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée et Charme de Tórshavn</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Débarquez sur ces îles mystiques, installez-vous dans la capitale colorée et laissez-vous imprégner par l'atmosphère paisible de Tórshavn, entre maisons traditionnelles et port animé. Une première journée douce pour s'acclimater et ressentir la quiétude nordique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬 Arrivée à l'aéroport de Vágar (FAE)</strong>: Transfert vers Tórshavn, la capitale des Îles Féroé, en traversant des paysages déjà époustouflants et verdoyants.</li><li><strong>🛏️ Installation à l'hôtel</strong>: Prenez vos quartiers dans un hébergement confortable au cœur de Tórshavn, idéal pour se reposer après le voyage.</li><li><strong>🚶‍♂️ Balade relaxante dans le quartier historique de Tinganes</strong>: Flânez parmi les maisons en bois aux toits d'herbe de ce quartier historique, siège du gouvernement féroïen, et admirez le port.</li><li><strong>☕ Pause café et pâtisserie locale</strong>: Savourez un moment de détente dans un café cosy, goûtant aux douceurs féroïennes comme le "drýlur" (pain sucré).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Iles-feroe-0zu7w26190f300b/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Location de voiture</p>
+                                <p class="text-gray-700">Il est fortement recommandé de louer une voiture dès l'arrivée à l'aéroport pour explorer les îles en toute liberté. Réservez à l'avance pour garantir la disponibilité !</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Lacs Sereins et Villages Pittoresques</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez des paysages emblématiques avec des balades accessibles, découvrez des villages pittoresques et admirez la beauté brute des falaises, le tout dans une ambiance apaisante et ressourçante. Une journée dédiée à la découverte de la nature féroïenne.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚶‍♀️ Randonnée facile autour du lac Sørvágsvatn (Leitisvatn)</strong>: Profitez d'une marche douce jusqu'à la "chute d'eau sur l'océan", un spectacle naturel unique et apaisant, sans difficulté majeure.</li><li><strong>🏘️ Visite du village de Gásadalur et sa cascade Múlafossur</strong>: Découvrez ce village isolé et sa célèbre cascade tombant directement dans l'Atlantique, un lieu d'une beauté irréelle et photogénique.</li><li><strong>🚗 Route panoramique vers Saksun</strong>: Empruntez des routes sinueuses offrant des vues imprenables sur les fjords et les montagnes, une expérience visuelle à part entière.</li><li><strong>⛪ Exploration de la ferme-église de Saksun</strong>: Visitez ce hameau idyllique niché au fond d'une vallée, avec ses maisons aux toits d'herbe et son église pittoresque, invitant à la contemplation.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Iles-feroe-0zu7w26190f300b/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥾 Équipement</p>
+                                <p class="text-gray-700">Prévoyez des chaussures de marche imperméables et confortables, ainsi que des vêtements en couches, car la météo peut changer rapidement et le terrain être humide.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Croisière Relaxante et Vues Imprenables</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Laissez-vous bercer par les flots lors d'une croisière apaisante le long des falaises majestueuses, puis profitez d'une vue panoramique sur l'océan et les îles environnantes, loin de l'agitation du monde. Une immersion totale dans la grandeur marine des Féroé.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚢 Croisière relaxante aux falaises de Vestmanna (Bird Cliffs)</strong>: Embarquez pour une croisière paisible à travers des grottes marines et le long de falaises vertigineuses, abritant des milliers d'oiseaux marins, un spectacle naturel impressionnant.</li><li><strong>☕ Déjeuner paisible à Vestmanna</strong>: Savourez un repas réconfortant dans ce charmant village portuaire après votre excursion en mer, en profitant de l'ambiance locale.</li><li><strong>🌉 Visite de la "Pont sur l'Atlantique" (Brúgvin um Streymin)</strong>: Traversez ce pont unique reliant les îles de Streymoy et Eysturoy, offrant une vue imprenable sur le fjord et les paysages environnants.</li><li><strong>🚶‍♂️ Balade douce à Gjógv et son port naturel</strong>: Explorez ce village pittoresque, célèbre pour son port naturel en forme de gorge, et profitez d'une promenade tranquille le long de la côte, idéal pour la sérénité.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Iles-feroe-0zu7w26190f300b/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧥 Conseil Croisière</p>
+                                <p class="text-gray-700">Même en été, il peut faire frais et venteux en mer. Prévoyez des vêtements très chauds et imperméables pour la croisière aux falaises de Vestmanna, ainsi qu'un bonnet.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Adieux aux Îles et Retour</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une dernière matinée pour explorer Tórshavn à votre rythme, faire quelques emplettes locales ou simplement savourer l'ambiance avant de prendre votre vol retour, la tête pleine de souvenirs nordiques et apaisants. Une conclusion douce à votre aventure féroïenne.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛍️ Shopping de souvenirs à Tórshavn</strong>: Trouvez des pulls en laine féroïenne, des céramiques ou des œuvres d'art locales pour ramener un morceau des îles chez vous, un souvenir authentique.</li><li><strong>🏛️ Visite du Musée National des Féroé (Føroya Fornminnissavn)</strong>: Plongez dans l'histoire et la culture des îles, une activité calme et enrichissante pour mieux comprendre ces terres.</li><li><strong>🍽️ Dernier déjeuner féroïen</strong>: Savourez un dernier repas typique avant de quitter ces terres uniques, peut-être un plat de poisson frais.</li><li><strong>🛫 Transfert à l'aéroport de Vágar (FAE) et vol retour</strong>: Empruntez la route panoramique vers l'aéroport pour votre vol de retour vers Paris, france, avec des images inoubliables en tête.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Iles-feroe-0zu7w26190f300b/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Heure de départ</p>
+                                <p class="text-gray-700">Prévoyez suffisamment de temps pour le trajet vers l'aéroport de Vágar (environ 45 minutes depuis Tórshavn) et les formalités d'embarquement, surtout en haute saison.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🛬 Budget vol: </strong>A partir de 355 €/pers</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🚗 Budget transports: </strong>Environ 120 €/pers (location voiture, essence, tunnels sous-marins)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🥗 Budget repas: </strong>Environ 240 €/pers (3 repas/jour, budget moyen pour 4 jours)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🛏️ Budget logement: </strong>Environ 360 €/pers (3 nuits, hôtel 3* ou guesthouse de qualité)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🎭 Budget activités: </strong>Environ 120 €/pers (croisière Vestmanna, musées, etc.)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Juin à Août</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Mai ou Septembre</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌦️ La météo aux Îles Féroé est très changeante et imprévisible. Prévoyez des vêtements en couches, un bon coupe-vent et un imperméable, quelle que soit la saison, pour faire face à toutes les conditions.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est la Couronne Danoise (DKK). Les cartes de crédit sont largement acceptées partout, mais avoir un peu de liquide peut être utile pour les petits commerces ou les villages isolés.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚗 Le permis de conduire français est suffisant pour louer une voiture. La conduite se fait à droite. Attention aux nombreux tunnels sous-marins qui sont payants (environ 100 DKK/trajet, souvent facturés à la location).</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 La couverture mobile est généralement bonne sur les îles principales. Le Wi-Fi est disponible dans la plupart des hébergements, cafés et restaurants, vous permettant de rester connecté.</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Anecdotes
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🐑 Plus de moutons que d'habitants !:</strong> Les Îles Féroé comptent environ 80 000 moutons pour seulement 54 000 habitants. C'est pourquoi leur nom signifie littéralement "Îles aux Moutons" en vieux norrois, une réalité visible partout !</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>⚽ Le football, une passion nationale:</strong> Malgré leur petite taille et leur population modeste, les Féroé ont leur propre équipe nationale de football qui a réussi l'exploit de battre des nations bien plus grandes, comme la Grèce ou l'Autriche, créant la surprise sur la scène internationale et un immense sentiment de fierté.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Spécialités culinaires
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🍴 Skerpikjøt:</strong> De l'agneau séché à l'air libre pendant plusieurs mois, offrant une saveur intense et unique, très appréciée des locaux. Souvent servi en fines tranches avec du pain de seigle, c'est une expérience gustative audacieuse.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🍲 Ræst Kjøt:</strong> Viande d'agneau fermentée, une spécialité traditionnelle au goût très prononcé et acquis, souvent préparée en ragoût ou servie avec des pommes de terre. C'est un plat emblématique de la cuisine féroïenne.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🐟 Fiskakøka:</strong> Des boulettes de poisson (souvent de la morue ou de l'églefin) mélangées à des pommes de terre et des oignons, puis frites. Un plat réconfortant et savoureux, parfait pour les journées fraîches.</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Iles-feroe-0zu7w26190f300b/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/CDG-FAE/2026-05-15/2026-05-19" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://visitfaroeislands.com/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Visit Faroe Islands</strong></a></li>
+                    
+                        <li><a href="https://www.62n.fo/car-rental/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚗 62°N Car Rental</strong></a></li>
+                    
+                        <li><a href="https://www.meteo.fo/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Meteo.fo</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+        
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
